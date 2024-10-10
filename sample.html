@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        form{
+            background-color: azure;
+            
+            padding: 50px;
+        }
+        .wrapper{
+            width: fit-content;
+            margin: auto;
+        }
+        label{
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+        <div class="wrapper">
+            <div>
+                <div>
+                    <label for="name">Name</label>
+                </div>
+                <div>
+                    <input type="text" id="name" required>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="age">Age</label>
+                </div>
+                <input type="number" id="age" required >
+            </div>
+            <div>
+                <div>
+                    <label for="subject">subject</label>
+                </div>
+                <input type="text" id="subject" required>
+            </div>
+            <div style="display: flex; gap: 20px; margin-top: 20px;">
+                <div>
+                    <button type="button" id="addName">Add</button>
+                </div>
+                <div>
+                    <button type="button" id="modifyName"> Modify</button>
+                </div>
+                <div>
+                    <button type="button" id="removeName">Remove</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="form.js"></script>
+</body>
+</html>
